@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   font-size: 14px;
   line-height: 21px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -6,6 +7,176 @@ body {
   font-weight: 400;
   color: #333333;
 }
+
+.page {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main-header {
+  background-color: yellow;
+  height: 56px;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+.welcome {
+  background-color: pink;
+  height: 508px;
+}
+
+.slogan-box {
+  width: 505px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 58px;
+  background-color: blue;
+}
+
+.features-item1 {
+  height: 255px;
+  margin-bottom: 40px;
+  background-color: lightgreen;
+}
+
+.features-item2 {
+  height: 255px;
+  margin-bottom: 35px;
+  background-color: lightgreen;
+}
+
+.features-item3,
+.features-item4 {
+  height: 255px;
+  margin: 0;
+  background-color: lightgreen;
+}
+
+.features-item {
+  width: 400px;
+  height: 255px;
+  background-color: red;
+}
+
+.features-item2 .features-item,
+.features-item4 .features-item {
+  float: left;
+}
+.features-item3 .features-item {
+  float: right;
+}
+
+.index-content {
+  width: 445px;
+  height: 105px;
+  margin: 50px auto;
+  background-color: orange;
+}
+
+.index-content-form {
+width: 568px;
+height: 480px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 81px;
+background-color: grey;
+}
+
+.search-form-title {
+  width: 568px;
+  height: 75px;
+  background-color: brown;
+}
+
+.search-btn {
+  width: 458px;
+  height: 59px;
+  background-color: lightblue;
+}
+
+.main-footer {
+  height: 120px;
+  background-color: green;
+}
+
+.footer-contacts,
+.footer-social,
+.footer-copyright {
+  float: left;
+  width: 200px;
+  height: 120px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: aqua;
+}
+
+.choice {
+  height: 217px;
+  background-color: pink;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+.infrastructure {
+  float: left;
+  width: 131px;
+  height: 146px;
+  margin-top: 29px;
+  margin-right: 85px;
+  background-color: lightblue;
+}
+.accommodation {
+  float: left;
+  width: 131px;
+  height: 146px;
+  margin-top: 29px;
+  background-color: lightblue;
+}
+
+.price {
+  float: right;
+  width: 328px;
+  height: 146px;
+  margin-top: 29px;
+  background-color: lightblue;
+}
+
+.sort {
+  height: 70px;
+  background-color: green;
+}
+
+.results-line {
+  height: 150px;
+  background-color: orange;
+}
+
+/*.rating { */ /*не знаю как вставить рейтинг, все слетает */
+  float: right;
+  width: 111px;
+  height: 150px;
+  background-color: lightgreen;
+}
+
+.results-item {
+  width: 442px;
+  height: 151px;
+  background-color: red;
+}
+
+.results-box {
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
 
 .slogan,
 .results-title {

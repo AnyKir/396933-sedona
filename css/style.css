@@ -127,25 +127,29 @@ background-color: grey;
 
 .infrastructure {
   float: left;
-  width: 131px;
-  height: 146px;
-  margin-top: 29px;
-  margin-right: 85px;
+  box-sizing: border-box;
+  width: 150px;
+  height: 160px;
+  margin-top: 30px;
+  margin-right: 91px;
   background-color: lightblue;
 }
 .accommodation {
   float: left;
-  width: 131px;
-  height: 146px;
-  margin-top: 29px;
+  box-sizing: border-box;
+  width: 141px;
+  height: 160px;
+  margin-top: 30px;
+
   background-color: lightblue;
 }
 
 .price {
   float: right;
+  box-sizing: border-box;
   width: 328px;
-  height: 146px;
-  margin-top: 29px;
+  height: 160px;
+  margin-top: 30px;
   background-color: lightblue;
 }
 
@@ -155,15 +159,10 @@ background-color: grey;
 }
 
 .results-line {
+  display: flex;
   height: 150px;
   background-color: orange;
-}
-
-/*.rating { */ /*не знаю как вставить рейтинг, все слетает */
-  float: right;
-  width: 111px;
-  height: 150px;
-  background-color: lightgreen;
+  justify-content: space-between;
 }
 
 .results-item {
@@ -172,11 +171,20 @@ background-color: grey;
   background-color: red;
 }
 
+.rating {
+  width: 111px;
+  height: 150px;
+  background-color: lightgreen;
+}
+
 .results-box {
   padding-left: 72px;
   padding-right: 72px;
 }
 
+fieldset {
+  border: none;
+}
 
 .slogan,
 .results-title {

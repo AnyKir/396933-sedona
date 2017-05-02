@@ -22,8 +22,23 @@ body {
 .main-header {
   background-color: yellow;
   height: 56px;
-  padding-left: 72px;
-  padding-right: 72px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item {
+  float: left;
+  width: 240px;
+  height: 56px;
+  background-color: brown;
+}
+
+.nav-item:nth-child(2) {
+  margin-right: 240px;
 }
 
 .welcome {
@@ -154,8 +169,28 @@ background-color: grey;
 }
 
 .sort {
-  height: 70px;
+  height: 87px;
   background-color: green;
+}
+
+.results-title {
+  display: inline-block;
+  float: left;
+  margin-right: 53px;
+}
+
+.sort-title {
+  display: inline-block;
+  float: left;
+  margin-right: 43px;
+}
+
+.sort-content {
+  display: inline-block;
+  float: left;
+  width: 80px;
+  margin-right: 2px;
+  background-color: yellow;
 }
 
 .results-line {
@@ -166,8 +201,10 @@ background-color: grey;
 }
 
 .results-item {
-  width: 442px;
-  height: 151px;
+  display: flex;
+  width: 423px;
+  height: 150px;
+  justify-content: space-between;
   background-color: red;
 }
 
@@ -186,11 +223,14 @@ fieldset {
   border: none;
 }
 
+
+
 .slogan,
 .results-title {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  margin-top: 0;
   color: #000000;
 }
 
@@ -243,5 +283,12 @@ h3 {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  color: #000000;
+}
+
+.sort-title,
+.sort-content {
+  font-size: 12px;
+  line-height: 18px;
   color: #000000;
 }

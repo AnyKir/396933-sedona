@@ -6,6 +6,7 @@
       <title>
         HTML Academy: Седона
       </title>
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
       <link href="css/normalize.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
     </head>
@@ -55,53 +56,52 @@
           <section class="features">
             <div class="features-item1 ">
               <div class="features-item white">
-                <h2 class="features-name white">
+                <h2 class="features-name white small">
                   Настоящий городок
                 </h2>
                 <div class="number">
                   — №1 —
                 </div>
-                <p>
-                  Седона — не аттракцион для туристов,там течет своя жизнь
+                <p class="text-line1">
+                  Седона — не аттракцион для туристов, там течет своя жизнь
                 </p>
               </div>
             </div>
             <div class="features-item2 clearfix">
               <div class="features-item">
-                <div class="home">
-                  <h2 class="features-name">
-                    Жилье
-                  </h2>
-                  <p>
-                    Рекомендуем пожить в настоящем мотеле, все как в кино!
-                  </p>
-                </div>
+                <div class="home"></div>
+                <h2 class="features-name line2">
+                  Жилье
+                </h2>
+                <p>
+                  Рекомендуем пожить в настоящем мотеле, все как в кино!
+                </p>
               </div>
               <div class="features-item">
-                <div class="food">
-                  <h2 class="features-name">
-                    Еда
-                  </h2>
-                  <p>
-                    Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
-                  </p>
-                </div>
+                <div class="food"></div>
+                <h2 class="features-name line2">
+                  Еда
+                </h2>
+                <p>
+                  Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
+                </p>
               </div>
               <div class="features-item">
-                <div class="gift">
-                  <h2 class="features-name">
-                    Сувениры
-                  </h2>
-                  <p>
-                    Не только китайского, но и местного производства!
-                  </p>
-                </div>
+                <div class="gift"></div>
+                <h2 class="features-name line2">
+                  Сувениры
+                </h2>
+                <p>
+                  Не только китайского, но и местного производства!
+                </p>
               </div>
             </div>
             <div class="features-item3 clearfix">
               <div class="features-item white">
                 <h2 class="features-name white">
-                  Там есть  Мост дьявола
+                  Там есть
+                  <br>
+                  Мост дьявола
                 </h2>
                 <div class="number">
                  — №2 —
@@ -113,7 +113,7 @@
             </div>
             <div class="features-item4 clearfix">
               <div class="features-item">
-                <h2 class="features-name">
+                <h2 class="features-name small">
                   Небольшая площадь
                 </h2>
                 <div class="number">
@@ -124,7 +124,7 @@
                 </p>
               </div>
               <div class="features-item">
-                <h2 class="features-name">
+                <h2 class="features-name small">
                  Красивая дорога
                 </h2>
                 <div class="number">
@@ -135,7 +135,7 @@
                 </p>
               </div>
               <div class="features-item">
-                <h2 class="features-name">
+                <h2 class="features-name small">
                  Мало туристов
                 </h2>
                 <div class="number">
@@ -147,37 +147,39 @@
               </div>
             </div>
           </section>
-          <div class="container">
-            <div class="index-content">
-              <h2 class="interest">
-                Заинтересовались?
-              </h2>
-              <p class="content">
-                Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
-              </p>
-            </div>
+          <div class="index-content">
+            <h2 class="interest">
+              Заинтересовались?
+            </h2>
+            <p class="content">
+              Укажите предполагаемые даты поездки,
+              <br>
+              и мы покажем вам лучшие предложения гостиниц в Седоне
+            </p>
+          </div>
+          <div class="map">
             <div class="index-content-form">
               <button class="search-form-title">
                 Поиск гостиницы в Седоне
               </button>
               <form class="search" action="#" method="post">
-                <fieldset>
+                <fieldset class="arrival-date">
                   <label for="arrival-field">
                     Дата заезда:
                   </label>
                   <input type="text" name="arrival-date" id="arrival-field" value="24 апреля 2017">
-                  <div class="icon">
+                  <div class="icon calendar">
                   </div>
                 </fieldset>
-                <fieldset>
+                <fieldset class="departure">
                   <label for="departure-field">
                     Дата выезда:
                   </label>
                   <input type="text" name="departure" id="departure-field" value="4 июля 2017">
-                  <div class="icon">
+                  <div class="icon calendar">
                   </div>
                 </fieldset>
-                <fieldset>
+                <fieldset class="people">
                   <label for="adults-field">
                    Взрослые
                   </label>
@@ -189,10 +191,10 @@
                   <label for="children-field">
                     Дети
                   </label>
-                  <button class="minus">
+                  <button class="minus minus2">
                   </button>
                   <input type="number" name="childen" id="children-field" value="0">
-                  <button class="plus">
+                  <button class="plus plus2">
                   </button>
                 </fieldset>
                 <button class="search-btn" type="submit">
@@ -210,14 +212,14 @@
               </a>
             </section>
             <section class="footer-social">
-              <a class="social-btn social-btn-vk" href="#">
-                Twitter
+              <a class="social-btn social-btn-tw" href="#">
+              Twitter
               </a>
               <a class="social-btn social-btn-fb" href="#">
-                Фейсбук
+              Фейсбук;
               </a>
-              <a class="social-btn social-btn-inst" href="#">
-                Youtube
+              <a class="social-btn social-btn-yt" href="#">
+              Youtube
               </a>
             </section>
             <section class="footer-copyright">

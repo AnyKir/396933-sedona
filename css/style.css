@@ -6,10 +6,11 @@ body {
   text-transform: uppercase;
   font-weight: 400;
   color: #333333;
-  background-color: #f2f2f2;
+  background-color: #f2f2f2ра;
 }
 
 .page {
+  position: relative;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -204,6 +205,7 @@ body {
   padding-left: 67px;
   padding-right: 67px;
   text-align: center;
+  background-color: #eeeeee;
 }
 
 .small {
@@ -218,7 +220,7 @@ body {
 
 .map {
   width: 1200px;
-  height: 552px;
+  height: 672px;
   padding-bottom: 8px;
   background: #ffffff url("../img/map.jpg") no-repeat 0 bottom;
 }
@@ -297,17 +299,25 @@ body {
 
 
 .arrival-date input {
-  padding-left: 30px;
+  width: 343px;
+  height: 38px;
+  margin-left: 15px;
+  padding-left: 15px;
   border: none;
   font: inherit;
   text-transform: inherit;
+  background-color: #f2f2f2;
 }
 
 .departure input {
-  padding-left: 28px;
+  width: 343px;
+  height: 38px;
+  margin-left: 14px;
+  padding-left: 14px;
   border: none;
   font: inherit;
   text-transform: inherit;
+  background-color: #f2f2f2;
 }
 
 .arrival-date input:focus,
@@ -324,6 +334,8 @@ body {
   font: inherit;
   text-transform: inherit;
   text-align: center;
+  background-color: #f2f2f2;
+
 }
 
 .plus {
@@ -331,7 +343,7 @@ body {
   height: 20px;
   margin-right: 55px;
   border: none;
-  background: #ffffff url("../img/sprite1.png") no-repeat -15px -330px;
+  background: #f2f2f2 url("../img/sprite1.png") no-repeat -15px -330px;
   opacity: 0.3;
 }
 
@@ -340,7 +352,7 @@ body {
 }
 
 .plus:active {
-  background: #ffffff url("../img/sprite1.png") no-repeat -15px -371px;
+  background: #f2f2f2 url("../img/sprite1.png") no-repeat -15px -371px;
   outline: none;
 }
 
@@ -350,7 +362,7 @@ body {
   margin-left: 55px;
   padding-top: 10px;
   border: none;
-  background: #ffffff url("../img/sprite1.png") no-repeat -15px -259px;
+  background: #f2f2f2 url("../img/sprite1.png") no-repeat -15px -259px;
   opacity: 0.3;
 }
 
@@ -359,7 +371,7 @@ body {
 }
 
 .minus:active {
-  background: #ffffff url("../img/sprite1.png") no-repeat -15px -292px;
+  background: #f2f2f2 url("../img/sprite1.png") no-repeat -15px -292px;
   outline: none;
 }
 
@@ -374,10 +386,10 @@ body {
 .calendar {
   position: absolute;
   left: 482px;
-  bottom: 9px;
+  bottom: 15px;
   width: 25px;
   height: 25px;
-  background: #ffffff url("../img/sprite1.png") no-repeat -15px -171px;
+  background: #f2f2f2 url("../img/sprite1.png") no-repeat -15px -171px;
   opacity: 0.3;
 }
 
@@ -386,8 +398,15 @@ body {
 }
 
 .calendar:active {
-  background: #ffffff url("../img/sprite1.png") no-repeat -15px -119px;
+  background: #f2f2f2 url("../img/sprite1.png") no-repeat -15px -119px;
   opacity: 1;
+}
+
+.main-footer {
+  position: absolute;
+  bottom: 0;
+  width: 1200px;
+  background-color: rgba(255, 255, 255, 0.9)
 }
 
 .footer-contacts,
@@ -702,6 +721,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 .results-title {
   float: left;
   margin-right: 46px;
+  margin-left: 72px;
   padding-top: 30px;
 }
 
@@ -754,6 +774,11 @@ input[type="checkbox"]:checked:disabled + label::before {
   display: flex;
   height: 150px;
   justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.results-line3{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .btn-up {
@@ -762,6 +787,7 @@ input[type="checkbox"]:checked:disabled + label::before {
   top: 40px;
   width: 0;
 	height: 0;
+  margin-right: 75px;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-bottom: 8px solid #cccccc;
@@ -773,6 +799,7 @@ input[type="checkbox"]:checked:disabled + label::before {
   top: 40px;
   width: 0;
 	height: 0;
+  margin-right: 72px;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-top: 8px solid #cccccc;
@@ -808,6 +835,7 @@ a + .active,
   width: 500px;
   height: 150px;
   justify-content: space-between;
+  margin-left: 72px;
 }
 
 .results-item img {
@@ -844,11 +872,11 @@ a + .active,
 }
 
 .price1 {
-  margin-left: 35px;
+  margin-left: 37px;
 }
 
 .price2{
-  margin-left: 62px;
+  margin-left: 64px;
 }
 
 .price3 {
@@ -911,6 +939,7 @@ a + .active,
 .rating {
   width: 111px;
   height: 150px;
+  margin-right: 72px;
   background: #ffffff url("../img/4stars.png") no-repeat 20px 30px;
 }
 
@@ -924,11 +953,6 @@ a + .active,
 .rating p {
   text-align: center;
   margin-top: 97px;
-}
-
-.results {
-  padding-left: 72px;
-  padding-right: 72px;
 }
 
 fieldset {
